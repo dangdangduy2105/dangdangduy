@@ -1,0 +1,25 @@
+<h2>Danh sách sản phẩm</h2>
+<a href="/add"> Thêm sản phẩm</a>
+<div class="container">
+
+    <table class="table table-bordered table-striped mt-3">
+        <thead>
+            <tr>
+                <th>STT</th>
+                <th>Tên sản phẩm</th>
+                <th>Giá</th>
+                <th>Thao tác</th>
+            </tr>
+        </thead>
+        <tbody>
+            {{#each products}}
+                <tr>
+                    <td>{{id}}</td>
+                    <td><a href="/{{id}}">{{name}}</a></td>
+                    <td>${{price}}</td>
+                    <td><a href="/edit/{{id}}"> Sửa </a> | <a href="/delete/{{id}}"> Xóa </a></td>
+                </tr>
+            {{/each}}
+        </tbody>
+    </table>
+</div>

@@ -1,0 +1,16 @@
+<div>
+  <h1>Đăng nhập</h1>
+  <form action="/login" method="POST">
+    <div class="container">
+      <label for="username"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="username" value={{username}}>
+
+      <label for="password"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="password" value={{password}}>
+
+      <button type="submit">Login</button>
+      {{#if msg}}
+        <div style="color: red;"> {{msg}}</div>
+      {{/if}}
+  </form>
+</div>

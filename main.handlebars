@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Demo</title>
+    <link href="/bootstrap.css" type="text/css" rel="stylesheet"/>
+    <script src="/jquery-3.3.1.min.js"></script>
+</head>
+<body>
+    {{#if msg}}
+    <div style="text-align: center; padding: 10px; border: 1px solid lightblue;
+    background: #a178fe; color: rgb(108, 13, 13); border-radius: 5px;">
+        <b>{{msg.intro}}</b> - {{msg.message}}
+    </div>
+    {{/if}}
+    {{{body}}}
+</body>
+</html>

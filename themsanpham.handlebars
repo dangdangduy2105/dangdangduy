@@ -1,0 +1,27 @@
+<h1>Thêm sản phẩm</h1>
+
+<form action="/add" method="POST">
+    <table>
+        <tr>
+            <th>ID: </th>
+            <td><input type="text" name="id" value="{{id}}"></td>
+        </tr>
+         <tr>
+            <th>Tên sản phẩm: </th>
+            <td><input type="text" name="name" value="{{name}}"></td>
+        </tr>
+         <tr>
+            <th>Giá: </th>
+            <td><input type="text" name="price" value="{{price}}"></td>
+        </tr>
+         <tr>
+            <th>Hình: </th>
+            <td><input type="text" name="image" value="{{iamge}}"></td>
+        </tr>
+        
+    </table>
+    <button type="submit">Login</button>
+      {{#if msg}}
+        <div style="color: red;"> {{msg}}</div>
+      {{/if}}
+</form>
